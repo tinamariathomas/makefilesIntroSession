@@ -2,8 +2,7 @@ Examples for makefile intro session
 
 Simple rule 
 
-target:
+target: dependency
         action
 
-
-*Such a target is often called a phony target. We'll get to that later though :)         
+The dependency can either be a file or another target. If it does not exist the make will fail. In this example, the dependency is another file.
