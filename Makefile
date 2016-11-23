@@ -1,5 +1,7 @@
-main : name.o greet.o
-	gcc name.o greet.o -o main
+objectFiles = name.o greet.o 
+
+main : $(objectFiles)
+	gcc $(objectFiles) -o main
 
 name.o : name.cpp
 	gcc -c name.cpp -o name.o
